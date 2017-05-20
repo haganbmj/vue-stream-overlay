@@ -1,0 +1,9 @@
+{
+  "p1_name": "Player One",
+  "p1_score": 1,
+  "p1_character": "Fox",
+  "p2_name": "Player Two",
+  "p2_score": 0,
+  "p2_character": "Falco",
+  "event_round": "Winners Finals"
+}

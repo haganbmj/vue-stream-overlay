@@ -1,0 +1,58 @@
+/**
+ * I like to think of this as my global variables.
+ * These are for stylings that I'll need regarldess of the scene/overlay.
+ * For example, I want my font to be consistent throughout.
+ *
+ * If you're alright with a bit more process, I'd highly recommend using sass/less
+ * so that you can acutally use and share variables across files.
+ */
+
+@font-face {
+  font-family: 'SourceSansPro-Black';
+  src: url('fonts/SourceSansPro-Black.otf');
+}
+
+html {
+  /* Setting the base font style */
+  font-size: 20px;
+  font-family: 'SourceSansPro-Black';
+  color: black;
+  text-transform: uppercase;
+
+  /* Setting out canvas size */
+  width: 1280px;
+  height: 720px;
+
+  /* Ensuring there's no background, scrollbars, etc */
+  background: transparent;
+  overflow: hidden;
+  margin: 0; padding: 0;
+}
+
+/**
+ * CSS sucks with centering content. I like to use flex, which is a bit easier to work with,
+ * but you still need to go with some hacky boxes in boxes approach.
+ *
+ *  __________________________________  <- Our outer "container"
+ * |                                  |
+ * |----------------------------------| <- Out inener box, which will be vertically centered
+ * |                                  |    in the container and will handle aligning text within it.
+ * |                                  |
+ * |----------------------------------|
+ * |__________________________________|
+ */
+.container {
+  position: absolute;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.container > span {
+  position: relative;
+
+  width: 100%;
+  height: auto;
+}

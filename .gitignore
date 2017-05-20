@@ -1,0 +1,15 @@
+.DS_Store
+node_modules/*
+bower_components
+
+# IntelliJ
+.idea/
+*.ipr
+*.iws
+*.iml
+.idea_modules
+
+# NPM logs, etc.
+logs
+*.log
+npm-debug.log*

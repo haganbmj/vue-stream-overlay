@@ -1,0 +1,67 @@
+/**
+ * These are the custom positionings and stylings related to sample.html
+ * In this file, we'll define the background and where the text should be positioned.
+ */
+
+body {
+  background-image: url('../assets/images/sample-overlay.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.score {
+  color: white;
+  font-size: 24px;
+}
+
+.p1-char {
+  top: 4px;
+  left: 102px;
+  width: 25px;
+}
+
+.p1-name {
+  top: 4px;
+  left: 132px;
+  width: 210px;
+
+  text-align: left;
+}
+
+.p1-score {
+  top: -2px;
+  left: 345px;
+  width: 30px;
+}
+
+.event-round {
+  top: 2px;
+  left: 372px;
+  width: 125px;
+
+  font-size: 14px;
+  text-transform: none;
+}
+
+.p2-score {
+  top: -2px;
+  left: 493px;
+  width: 30px;
+}
+
+.p2-name {
+  top: 4px;
+  left: 527px;
+  width: 210px;
+
+  text-align: right;
+}
+
+.p2-char {
+  top: 4px;
+  left: 741px;
+  width: 25px;
+
+  /* Flip the image */
+  transform: scaleX(-1);
+}

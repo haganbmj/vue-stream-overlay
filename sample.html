@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Sample.html</title>
+  <link rel="stylesheet" type="text/css" href="./node_modules/vue2-animate/dist/vue2-animate.css" />
+
+  <link rel="stylesheet" type="text/css" href="./css/base.css" />
+  <link rel="stylesheet" type="text/css" href="./css/sample.css" />
+
+  <script src="./node_modules/vue/dist/vue.js"></script>
+  <script src="./node_modules/axios/dist/axios.js"></script>
+</head>
+
+<body>
+  <div id="app">
+
+    <section id="topbar">
+      <div class="p1-char container">
+        <transition name="fade" mode="out-in">
+          <span class="char" :key="info.p1_character">
+            <img class="character-icon" :src="'assets/images/character_icons/' + info.p1_character + '.png'"/>
+          </span>
+        </transition>
+      </div>
+
+      <div class="p1-name container">
+        <transition name="fade" mode="out-in">
+          <span class="name" :key="info.p1_name" v-html="info.p1_name"></span>
+        </transition>
+      </div>
+
+      <div class="p1-score container">
+        <transition name="fade" mode="out-in">
+          <span class="score" :key="info.p1_score" v-html="info.p1_score"></span>
+        </transition>
+      </div>
+
+
+      <div class="event-round container">
+        <transition name="fade" mode="out-in">
+          <span class="round" :key="info.event_round" v-html="info.event_round"></span>
+        </transition>
+      </div>
+
+
+      <div class="p2-score container">
+        <transition name="fade" mode="out-in">
+          <span class="score" :key="info.p2_score" v-html="info.p2_score"></span>
+        </transition>
+      </div>
+
+      <div class="p2-name container">
+        <transition name="fade" mode="out-in">
+          <span class="name" :key="info.p2_name" v-html="info.p2_name"></span>
+        </transition>
+      </div>
+
+      <div class="p2-char container">
+        <transition name="fade" mode="out-in">
+          <span class="char" :key="info.p2_character">
+            <img class="character-icon" :src="'assets/images/character_icons/' + info.p2_character + '.png'"/>
+          </span>
+        </transition>
+      </div>
+    </section>
+
+  </div>
+</body>
+<!-- This needs to be loaded after the rest of the DOM -->
+<script src="./js/vue-main.js"></script>
+
+</html>
